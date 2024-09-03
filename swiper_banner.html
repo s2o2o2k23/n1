@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 1200px;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            width: auto;
+            background: tomato;
+            box-sizing: border-box;
+            /* width: fit-content; */
+        }
+
+
+        .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+    </style>
+    <!-- https://ranidiant.tistory.com/entry/swiper-js-%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B6%80%EB%93%9C%EB%9F%BD%EA%B2%8C-%ED%9D%90%EB%A5%B4%EB%8A%94-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0 -->
+</head>
+
+<body>
+
+
+
+
+    <div class="loop-swiper swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01xxxxx
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01a
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01zzzzzzzzzzzzzzzzzzzzzzzzzz
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".loop-swiper", {
+            centeredSlides: true,
+            loop: true,
+            loopedSlides: 8,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            speed: 2000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
